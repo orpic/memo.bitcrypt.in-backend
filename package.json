@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
+  "license": "MIT-Modified (No Commercial Use)",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec tsx src/server.ts",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
@@ -15,7 +16,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "description": "",
   "dependencies": {
     "cookie-parser": "^1.4.7",
