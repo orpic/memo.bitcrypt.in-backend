@@ -6,6 +6,7 @@ import hpp from 'hpp';
 import helmet from 'helmet';
 import Routes from '@/types/routes';
 import { PORT } from '@/env';
+import logger from '@/utils/winston';
 
 class App {
   public app: express.Application;
@@ -34,7 +35,7 @@ class App {
 
   public listen() {
     this.app.listen(3000, () => {
-      console.log(`Server running on http://localhost:${PORT}`);
+      logger.info(`Server running on http://localhost:${PORT}`);
     });
   }
 }
