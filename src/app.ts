@@ -1,11 +1,11 @@
-import express from "express";
-import bodyParser from "body-parser";
-import cors from "cors";
-import cookieParser from "cookie-parser";
-import hpp from "hpp";
-import helmet from "helmet";
-import Routes from "@/types/routes";
-import { PORT } from "@/env";
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import cookieParser from 'cookie-parser';
+import hpp from 'hpp';
+import helmet from 'helmet';
+import Routes from '@/types/routes';
+import { PORT } from '@/env';
 
 class App {
   public app: express.Application;
