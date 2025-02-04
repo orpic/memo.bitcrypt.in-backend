@@ -1,4 +1,4 @@
-const ecosystem = {
+module.exports = {
   apps: [
     {
       name: 'memo.bitcrypt.in-backend',
@@ -19,5 +19,3 @@ const ecosystem = {
     },
   ],
 };
-
-export default ecosystem;

@@ -12,6 +12,9 @@ export default [
       sourceType: 'module',
       globals: {
         ...globals.node,
+        module: true,
+        process: true,
+        require: true,
       },
     },
     plugins: {

@@ -1,7 +1,6 @@
 {
   "name": "memo.bitcrypt.in-backend",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
   "license": "MIT-Modified (No Commercial Use)",
   "scripts": {
@@ -9,7 +8,6 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "build": "tsc",
     "start": "node dist/server.js",
-    "start:pm2": "pm2 start dist/server.js --name memo.bitcrypt.in-backend",
     "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
     "prepare": "husky && husky install",
     "postinstall": "husky install"
