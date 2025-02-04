@@ -29,8 +29,7 @@ coverage
 # Mac OS files
 .DS_Store
 
-# Husky files
-.husky/
+
 
 # npmrc file (if you want to ignore personal npm config)
 .npmrc
