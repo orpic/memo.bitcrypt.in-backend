@@ -1,23 +1,24 @@
 import { Router } from 'express';
+import logger from 'utils/winston';
 
 class IndexRoute {
   public path = '/api/v1';
   public router = Router();
 
   constructor() {
-    this.initializeRootRoutes({
-      path: `${this.path}/root`,
-    });
+    this.initializeRootRoutes();
     this.initializeMemoRoutes({
       path: `${this.path}/memo`,
     });
   }
 
-  private initializeRootRoutes({ path }: { path: string }) {
-    this.router.get(path, (req, res) => {
-      res.send('Hello World!');
+  private initializeRootRoutes() {
+    this.router.get('/', (req, res) => {
+      logger.info('GET /', req);
+      res.status(200).send('OK');
     });
   }
+
   private initializeMemoRoutes({ path }: { path: string }) {}
 }
 
