@@ -1,9 +1,13 @@
 {
   "name": "memo.bitcrypt.in-backend",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "prepare": "husky && husky install",
+    "postinstall": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -30,7 +34,12 @@
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.4.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "eslint --fix"
   }
 }
