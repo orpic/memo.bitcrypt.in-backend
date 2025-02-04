@@ -33,3 +33,5 @@ coverage
 
 # npmrc file (if you want to ignore personal npm config)
 .npmrc
+
+dist/
