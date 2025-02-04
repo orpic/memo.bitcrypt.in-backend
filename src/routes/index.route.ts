@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import logger from 'utils/winston';
+import logger from '../utils/winston';
 
 class IndexRoute {
   public path = '/api/v1';
