@@ -1,6 +1,6 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
-import { DATABASE_URI } from '@/env';
-import logger from '@/utils/winston';
+import { DATABASE_URI } from './env';
+import logger from './utils/winston';
 
 let client: MongoClient;
 

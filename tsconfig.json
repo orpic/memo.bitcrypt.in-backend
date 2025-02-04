@@ -9,10 +9,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "outDir": "./dist",
-    "baseUrl": "./src", // This sets the base directory
-    "paths": {
-      "@/*": ["*"] // Aliases @ to the src directory
-    }
+    "baseUrl": "./src" // This sets the base directory
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

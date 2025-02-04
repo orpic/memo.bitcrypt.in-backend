@@ -1,8 +1,8 @@
 import 'dotenv/config';
-import App from '@/app';
-import IndexRoute from '@/routes/index.route';
-import { closeDB, connectDB } from '@/database';
-import logger from '@/utils/winston';
+import App from './app';
+import IndexRoute from './routes/index.route';
+import { closeDB, connectDB } from './database';
+import logger from './utils/winston';
 
 (async () => {
   try {

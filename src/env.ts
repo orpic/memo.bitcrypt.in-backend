@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { DEVELOPMENT, PRODUCTION } from '@/constants/common';
+import { DEVELOPMENT, PRODUCTION } from './constants/common';
 
 // Get the current environment (defaults to development if not set)
 const environment = process.env.NODE_ENV || DEVELOPMENT;

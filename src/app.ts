@@ -4,9 +4,9 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import hpp from 'hpp';
 import helmet from 'helmet';
-import Routes from '@/types/routes';
-import { PORT } from '@/env';
-import logger from '@/utils/winston';
+import Routes from './types/routes';
+import { PORT } from './env';
+import logger from './utils/winston';
 
 class App {
   public app: express.Application;
