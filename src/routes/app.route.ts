@@ -9,7 +9,7 @@ class AppRoute {
   private memoController = new MemoController();
 
   constructor() {
-    this.initializeMemoRoutes(`${this.path}/memo`);
+    this.initializeMemoRoutes('/memo');
   }
 
   private initializeMemoRoutes(path: string) {
